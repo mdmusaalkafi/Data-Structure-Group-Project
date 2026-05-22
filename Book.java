@@ -12,10 +12,10 @@ public class Book {
     private Book left;
     private Book right;
 
-    // Public constructor to initialize the book entity node                               // public Book(int isbn, String title, String author);
-    public Book(int isbn, String title, String author) {                                   //   this.isbn = isbn;
-        this.isbn = isbn;                                                                  //   this.title = title;
-        this.title = title;                                                                //   this.author = author;
+    // Public constructor to initialize the book entity node                              
+    public Book(int isbn, String title, String author) {                                  
+        this.isbn = isbn;                                                                  
+        this.title = title;                                                                
         this.author = author;
         this.left = null;
         this.right = null;

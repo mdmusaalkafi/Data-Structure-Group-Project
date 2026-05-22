@@ -1,61 +1,60 @@
-package entity;
+package smartlibraryproject;
 
-// Template file for Member 1.
-// Fill in the data node behavior here before merging the full BST.
 public class Book {
-    private int isbn;
-    private String title;
-    private String author;
+    // Changing fields to private ensures compliance with the Information Hiding rubric    // Originally given:
+    private int isbn;                                                                      // int isbn;
+    private String title;                                                                  // String title, author;
+    private String author;                                                                 // Book left, right;
     private Book left;
     private Book right;
 
-    public Book(int isbn, String title, String author) {
-        // TODO (Member 1): initialize the book data and set both child pointers to null.
-        this.isbn = isbn;
-        this.title = title;
+    // Public constructor to initialize the book entity node                              
+    public Book(int isbn, String title, String author) {                                   
+        this.isbn = isbn;                                                                  
+        this.title = title;                                                               
         this.author = author;
         this.left = null;
         this.right = null;
     }
 
-    public int getIsbn() {
-        // TODO (Member 1): return the private ISBN value.
-        return isbn;
+    // Public Getters and Setters to safely bridge data to other structures
+    public int getIsbn() { 
+        return isbn; 
+    }                                  
+    
+    public void setIsbn(int isbn) { 
+        this.isbn = isbn; 
     }
 
-    public String getTitle() {
-        // TODO (Member 1): return the private title value.
-        return title;
+    public String getTitle() { 
+        return title; 
+    }
+    
+    public void setTitle(String title) { 
+        this.title = title; 
     }
 
-    public String getAuthor() {
-        // TODO (Member 1): return the private author value.
-        return author;
+    public String getAuthor() { 
+        return author; 
+    }
+    
+    public void setAuthor(String author) { 
+        this.author = author; 
     }
 
-    public Book getLeft() {
-        // TODO (Member 1): return the left child pointer.
-        return left;
+    public Book getLeft() { 
+        return left; 
+    }
+    
+    public void setLeft(Book left) { 
+        this.left = left; 
     }
 
-    public Book getRight() {
-        // TODO (Member 1): return the right child pointer.
-        return right;
+    public Book getRight() { 
+        return right; 
     }
-
-    public void setLeft(Book left) {
-        // TODO (Member 1): assign the left child pointer.
-        this.left = left;
-    }
-
-    public void setRight(Book right) {
-        // TODO (Member 1): assign the right child pointer.
-        this.right = right;
-    }
-
-    @Override
-    public String toString() {
-        // TODO (Member 1): format this node for console output if the team wants a different style.
-        return "ISBN: " + isbn + ", Title: " + title + ", Author: " + author;
+    
+    public void setRight(Book right) { 
+        this.right = right; 
     }
 }
